@@ -85,6 +85,10 @@ CREATE TABLE Tener(
 	codigo_Barras VARCHAR(18) NOT NULL
 );
 
+COMMENT ON TABLE Tener IS 'Tabla que contiene la información sobre la existencia de un producto pedido';
+COMMENT ON COLUMN Tener.ID_Pedido IS 'Guarda el ID del pedido';
+COMMENT ON COLUMN Tener.codigo_Barras IS 'El código de barras del producto que funciona cómo identificador del mismo';
+
 CREATE TABLE envio_express(
 	id_envio_express INT NOT NULL UNIQUE,
 	curp_repartidor VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_repartidor) = 18),
@@ -95,6 +99,15 @@ CREATE TABLE envio_express(
 	costo decimal(18,2) CHECK(costo > 0)
 );
 
+COMMENT ON TABLE envio_express IS 'Tabla que contiene la información de los envíos express, funciona como identificador';
+COMMENT ON COLUMN envio_express.id_envio_express IS 'Guarda el ID del envío express';
+COMMENT ON COLUMN envio_express.curp_repartidor IS 'Es el CURP del repartidor encargado del envío';
+COMMENT ON COLUMN envio_express.precio IS 'precio del envío';
+COMMENT ON COLUMN envio_express.estado IS 'Estado del envío en el proceso de entrega';
+COMMENT ON COLUMN envio_express.tiempo_de_envio IS 'Fecha en la que se inició el proceso de envío';
+COMMENT ON COLUMN envio_express.tiempo IS 'El tiempo estimado que toda el envío express';
+COMMENT ON COLUMN envio_express.costo IS 'costo adicional del envío';
+
 CREATE TABLE envio_normal(
 	id_envio_normal INT NOT NULL UNIQUE,
 	curp_repartidor VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_repartidor) = 18),
@@ -102,6 +115,13 @@ CREATE TABLE envio_normal(
 	tiempo_de_envio DATE NOT NULL,
 	precio decimal(18,2) CHECK(precio > 0)
 );
+
+COMMENT ON TABLE envio_normal IS 'Tabla que contiene la información de los envíos normales, funciona como identificador';
+COMMENT ON COLUMN envio_normal.id_envio_normal IS 'El ID del envío normal';
+COMMENT ON COLUMN envio_normal.curp_repartidor IS 'El CURP del repartidor encargado del envío';
+COMMENT ON COLUMN envio_normal.estado IS 'Estado del envío en el proceso de entrega';
+COMMENT ON COLUMN envio_normal.tiempo_de_envio IS 'Fecha en la que se inició el proceso de envío';
+COMMENT ON COLUMN envio_normal.precio IS 'Precio del envío';
 
 CREATE TABLE cliente(
 	curp_cliente VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_cliente) = 18) UNIQUE,
@@ -172,6 +192,11 @@ CREATE TABLE telefono(
 	telefono VARCHAR (13) NOT NULL CHECK (telefono <> ''),
 	rfc VARCHAR(12) NOT NULL CHECK(CHAR_LENGTH (rfc) = 12)
 );
+
+COMMENT ON TABLE telefono IS 'Tabla que contiene la información del teléfono del proveedor';
+COMMENT ON COLUMN telefono.telefono IS 'El número telefónico del proveedor, funciona como identificador';
+COMMENT ON COLUMN telefono.rfc IS 'El RFC del proveedor, que funciona como identificador';
+
 
 /*
 LLAVES PRIMARIAS, FORANEAS Y COMPUESTAS
