@@ -80,6 +80,15 @@ CREATE TABLE Pedido(
 	ID_Envio_Normal INT
 );
 
+COMMENT ON TABLE Pedido IS 'Tabla que contiene la información de los pedidos';
+COMMENT ON COLUMN Pedido.ID_Pedido IS 'El ID del pedido que funciona cómo identificador del mismo';
+COMMENT ON COLUMN Pedido.Fecha IS 'Guarda la fecha en el que se hizo el pedido';
+COMMENT ON COLUMN Pedido.Hora IS 'Guarda la hora en el que se hizo el pedido';
+COMMENT ON COLUMN Pedido.metodoPago  IS 'El metodo de pago con el que se compro el pedido';
+COMMENT ON COLUMN Pedido.curp_cliente IS 'El CURP del cliente';
+COMMENT ON COLUMN Pedido.ID_Envio_Express IS 'La ID del pedido si es por envio express';
+COMMENT ON COLUMN Pedido.ID_Envio_Normal IS 'La ID del pedido si es por envio normal';
+
 CREATE TABLE Tener(
 	ID_Pedido INT NOT NULL,
 	codigo_Barras VARCHAR(18) NOT NULL
