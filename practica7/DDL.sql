@@ -13,6 +13,11 @@ CREATE TABLE tarjeta(
 	vencimiento DATE NOT NULL,
 	tipo_tarjeta VARCHAR(20) CHECK(tipo_tarjeta <> '')
 );
+COMMENT ON TABLE tarjeta IS 'Tabla que contiene la información de la tarjeta del cliente';
+COMMENT ON COLUMN tarjeta.numero_tarjeta IS 'El número de la tarjeta del cliente';
+COMMENT ON COLUMN curp_cliente IS 'El CURP del cliente';
+COMMENT ON COLUMN vencimiento IS 'La fecha de vencimiento de la tarjeta del cliente';
+COMMENT ON COLUMN tipo_tarjeta IS 'El tipo de tarjeta que tiene el cliente';
 
 CREATE TABLE categoria(
 	id_categoria VARCHAR(30) CHECK (id_categoria <> '') UNIQUE,
