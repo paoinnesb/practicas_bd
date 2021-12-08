@@ -31,6 +31,15 @@ CREATE TABLE proveedor(
 	codigo_postal INT CHECK(codigo_postal between 10000 and 99999)
 );
 
+COMMENT ON TABLE proveedor IS 'Tabla que contiene la información de los proveedores';
+COMMENT ON COLUMN proveedor.rfc IS 'El RFC del proveedor, que funciona como identificador';
+COMMENT ON COLUMN proveedor.razon_social IS 'La Razon Social del proveedor, o que es lo mismo, su nombre';
+COMMENT ON COLUMN proveedor.calle IS 'La calle del domicilio del proveedor';
+COMMENT ON COLUMN proveedor.estado IS 'El estado del domicilio del proveedor';
+COMMENT ON COLUMN proveedor.municipio IS 'El municipio del domicilio del proveedor';
+COMMENT ON COLUMN proveedor.numero IS 'El numero del domicilio del proveedor';
+COMMENT ON COLUMN proveedor.codigo_postal IS 'El codigo postal del domicilio del proveedor';
+
 CREATE TABLE producto(
 	codigo_barras VARCHAR(18) NOT NULL UNIQUE,
 	rfc VARCHAR(12) NOT NULL CHECK(CHAR_LENGTH (rfc) = 12),
@@ -91,6 +100,20 @@ CREATE TABLE cliente(
 	puntos_acumulados INT NOT NULL
 );
 
+COMMENT ON TABLE cliente IS 'Tabla que contiene la información de los operadores';
+COMMENT ON COLUMN cliente.curp_cliente IS 'El CURP de los clientes, funciona como identificador';
+COMMENT ON COLUMN cliente.fecha_de_nacimiento IS 'La fecha de nacimiento del cliente. Dato de tipo date';
+COMMENT ON COLUMN cliente.genero IS 'El genero del cliente, hombre o mujer.';
+COMMENT ON COLUMN cliente.calle IS 'Calle del domicilio del cliente';
+COMMENT ON COLUMN cliente.estado IS 'Estado del domicilio del cliente';
+COMMENT ON COLUMN cliente.municipio IS 'Municipio del domicilio del cliente';
+COMMENT ON COLUMN cliente.codigo_postal IS 'Codigo postal del domicilio del cliente';
+COMMENT ON COLUMN cliente.numero IS 'Numero del domicilio del cliente';
+COMMENT ON COLUMN cliente.apellido_paterno IS 'El apellido paterno del cliente';
+COMMENT ON COLUMN cliente.apellido_materno IS 'El apellido materno del cliente';
+COMMENT ON COLUMN cliente.correo_electronico IS 'El correo electronico del cliente.';
+COMMENT ON COLUMN cliente.puntos_acumulados IS 'El numero de puntos acumulados del cliente';
+
 CREATE TABLE Repartidor(
 	curp_repartidor VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_repartidor) = 18) UNIQUE,
 	curp_supervisor VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_supervisor) = 18),
@@ -108,6 +131,22 @@ CREATE TABLE Repartidor(
 	horario VARCHAR (11) CHECK(CHAR_LENGTH(horario) = 11),
 	calificacion INT CHECK(calificacion between 0 and 10)
 );
+
+COMMENT ON TABLE Repartidor IS 'Tabla que contiene la información de los repartidores';
+COMMENT ON COLUMN Repartidor.curp_repartidor IS 'El CURP del repartidor, funciona como identificador';
+COMMENT ON COLUMN Repartidor.curp_supervisor IS 'El CURP del supervisor, funciona como identificador';
+COMMENT ON COLUMN Repartidor.fecha_de_nacimiento IS 'La fecha de nacimiento del repartidor. Dato de tipo date';
+COMMENT ON COLUMN Repartidor.genero IS 'El genero del repartidor, hombre o mujer.';
+COMMENT ON COLUMN Repartidor.calle IS 'Calle del domicilio del repartidor';
+COMMENT ON COLUMN Repartidor.estado IS 'Estado del domicilio del repartidor';
+COMMENT ON COLUMN Repartidor.municipio IS 'Municipio del domicilio del repartidor';
+COMMENT ON COLUMN Repartidor.codigo_postal IS 'Codigo postal del domicilio del repartidor';
+COMMENT ON COLUMN Repartidor.numero IS 'Numero del domicilio del repartidor';
+COMMENT ON COLUMN Repartidor.apellido_paterno IS 'El apellido paterno del repartidor';
+COMMENT ON COLUMN Repartidor.apellido_materno IS 'El apellido materno del repartidor';
+COMMENT ON COLUMN Repartidor.salario IS 'El salario del repartidor.';
+COMMENT ON COLUMN Repartidor.horario IS 'El horario del repartidor';
+COMMENT ON COLUMN Repartidor.calificacion IS 'La calificacion del repartidor';
 
 CREATE TABLE telefono(
 	telefono VARCHAR (13) NOT NULL CHECK (telefono <> ''),
