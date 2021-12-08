@@ -196,7 +196,7 @@ REFERENCES proveedor(rfc) ON DELETE CASCADE ON UPDATE CASCADE;
 
 ALTER TABLE Repartidor ADD CONSTRAINT repartidor_pk PRIMARY KEY (curp_repartidor);
 ALTER TABLE Repartidor ADD CONSTRAINT supervisor_fk FOREIGN KEY (curp_supervisor)
-REFERENCES Repartidor(curp_repartidor) ON DELETE ON UPDATE CASCADE;
+REFERENCES Repartidor(curp_repartidor) ON DELETE CASCADE ON UPDATE CASCADE;
 
 ALTER TABLE envio_normal ADD CONSTRAINT envio_normal_pk PRIMARY KEY (id_envio_normal);
 ALTER TABLE envio_normal ADD CONSTRAINT repartidor_fk FOREIGN KEY (curp_repartidor)
