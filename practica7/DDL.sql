@@ -14,10 +14,10 @@ CREATE TABLE tarjeta(
 	tipo_tarjeta VARCHAR(20) CHECK(tipo_tarjeta <> '')
 );
 COMMENT ON TABLE tarjeta IS 'Tabla que contiene la información de la tarjeta del cliente';
-COMMENT ON COLUMN tarjeta.numero_tarjeta IS 'El número de la tarjeta del cliente';
-COMMENT ON COLUMN curp_cliente IS 'El CURP del cliente';
-COMMENT ON COLUMN vencimiento IS 'La fecha de vencimiento de la tarjeta del cliente';
-COMMENT ON COLUMN tipo_tarjeta IS 'El tipo de tarjeta que tiene el cliente';
+COMMENT ON COLUMN tarjeta.numero_tarjeta IS 'El número de la tarjeta del cliente, que funciona cómo identificador de la tarjeta';
+COMMENT ON COLUMN tarjeta.curp_cliente IS 'El CURP del cliente';
+COMMENT ON COLUMN tarjeta.vencimiento IS 'La fecha de vencimiento de la tarjeta del cliente';
+COMMENT ON COLUMN tarjeta.tipo_tarjeta IS 'El tipo de tarjeta que tiene el cliente';
 
 CREATE TABLE categoria(
 	id_categoria VARCHAR(30) CHECK (id_categoria <> '') UNIQUE,
@@ -25,6 +25,12 @@ CREATE TABLE categoria(
 	nombre VARCHAR(30) CHECK(nombre <> ''),
 	cantidad_de_productos INT NOT NULL
 );
+
+COMMENT ON TABLE categoria IS 'Tabla que contiene la categoria de los productos';
+COMMENT ON COLUMN categoria.id_categoria IS 'El id de la categoria, que funciona cómo identificador de la categoria';
+COMMENT ON COLUMN categoria.descripcion IS 'Descripcion de la categoria';
+COMMENT ON COLUMN categoria.nombre IS 'Nombre de la categoria';
+COMMENT ON COLUMN categoria.cantidad_de_productos IS 'Numero de productos en una categoria';
 
 CREATE TABLE proveedor(
 	rfc VARCHAR(12) NOT NULL CHECK(CHAR_LENGTH (rfc) = 12) unique,
@@ -54,6 +60,15 @@ CREATE TABLE producto(
 	imagen VARCHAR NOT NULL,
 	nombre VARCHAR(30) CHECK(nombre <> '')
 );
+
+COMMENT ON TABLE producto IS 'Tabla que contiene la información de los productos';
+COMMENT ON COLUMN producto.codigo_barras IS 'El código de barras del producto que funciona cómo identificador del mismo';
+COMMENT ON COLUMN producto.rfc IS 'Guarda la información del RFC';
+COMMENT ON COLUMN producto.id_categoria IS 'El id del producto';
+COMMENT ON COLUMN producto.precio  IS 'El precio del producto';
+COMMENT ON COLUMN producto.unidades_disponibles IS 'Unidades en existencia del producto';
+COMMENT ON COLUMN producto.imagen IS 'La imagen del producto';
+COMMENT ON COLUMN producto.nombre IS 'El nombre del producto';
 
 CREATE TABLE Pedido(
 	ID_Pedido INT NOT NULL UNIQUE,
