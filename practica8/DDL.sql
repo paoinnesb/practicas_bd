@@ -58,7 +58,8 @@ CREATE TABLE producto(
 	precio DECIMAL(18,2),
 	unidades_disponibles INT NOT NULL,
 	imagen VARCHAR NOT NULL,
-	nombre VARCHAR(30) CHECK(nombre <> '')
+	nombre VARCHAR(30) CHECK(nombre <> ''),
+	descuento DECIMAL(0,3)
 );
 
 COMMENT ON TABLE producto IS 'Tabla que contiene la información de los productos';
@@ -162,6 +163,8 @@ COMMENT ON COLUMN cliente.apellido_paterno IS 'El apellido paterno del cliente';
 COMMENT ON COLUMN cliente.apellido_materno IS 'El apellido materno del cliente';
 COMMENT ON COLUMN cliente.correo_electronico IS 'El correo electronico del cliente.';
 COMMENT ON COLUMN cliente.puntos_acumulados IS 'El numero de puntos acumulados del cliente';
+COMMENT ON COLUMN cliente.nombre IS 'El nombre del cliente.';
+COMMENT ON COLUMN cliente.contraseña IS 'La contraseña del cliente.';
 
 CREATE TABLE Repartidor(
 	curp_repartidor VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_repartidor) = 18) UNIQUE,
@@ -196,6 +199,7 @@ COMMENT ON COLUMN Repartidor.apellido_materno IS 'El apellido materno del repart
 COMMENT ON COLUMN Repartidor.salario IS 'El salario del repartidor.';
 COMMENT ON COLUMN Repartidor.horario IS 'El horario del repartidor';
 COMMENT ON COLUMN Repartidor.calificacion IS 'La calificacion del repartidor';
+COMMENT ON COLUMN Repartidor.nombre IS 'El nombre del repartidor.';
 
 CREATE TABLE telefono(
 	telefono VARCHAR (13) NOT NULL CHECK (telefono <> ''),
