@@ -70,6 +70,7 @@ COMMENT ON COLUMN producto.precio  IS 'El precio del producto';
 COMMENT ON COLUMN producto.unidades_disponibles IS 'Unidades en existencia del producto';
 COMMENT ON COLUMN producto.imagen IS 'La imagen del producto';
 COMMENT ON COLUMN producto.nombre IS 'El nombre del producto';
+COMMENT ON COLUMN producto.descuento IS 'El descuento que se le agrega al producto en caso de que haya uno';
 
 CREATE TABLE Pedido(
 	ID_Pedido INT NOT NULL UNIQUE,
