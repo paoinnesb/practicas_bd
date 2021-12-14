@@ -59,7 +59,7 @@ CREATE TABLE producto(
 	unidades_disponibles INT NOT NULL,
 	imagen VARCHAR NOT NULL,
 	nombre VARCHAR(30) CHECK(nombre <> ''),
-	descuento DECIMAL(0,3)
+	descuento DECIMAL(4,3)
 );
 
 COMMENT ON TABLE producto IS 'Tabla que contiene la información de los productos';
@@ -140,7 +140,7 @@ CREATE TABLE cliente(
 	calle VARCHAR(30) CHECK(calle <> ''),
 	estado VARCHAR(30) CHECK(estado <> ''),
 	municipio VARCHAR(30) CHECK(municipio <> ''),
-	codigo_postal INT CHECK(codigo_postal between 10000 and 99999),
+	codigo_postal INT CHECK(codigo_postal between 00000 and 99999),
 	numero VARCHAR(13) CHECK(numero <> ''),
 	nombre VARCHAR(30) CHECK(nombre <> ''),
 	apellido_paterno VARCHAR (30) CHECK (apellido_paterno <> ''),
