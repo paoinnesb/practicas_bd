@@ -1,4 +1,3 @@
-
 /*
 Script para la creación de la base de datos
 */
@@ -120,7 +119,7 @@ COMMENT ON COLUMN envio_express.tiempo IS 'El tiempo estimado que toda el envío
 COMMENT ON COLUMN envio_express.costo IS 'costo adicional del envío';
 
 CREATE TABLE envio_normal(
-	id_envio_normal INT NOT NULL UNIQUE,
+	id_envio_normal BIGINT NOT NULL UNIQUE,
 	curp_repartidor VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_repartidor) = 18),
 	estado VARCHAR(30) CHECK(estado <> ''),
 	tiempo_de_envio DATE NOT NULL,
@@ -175,13 +174,13 @@ CREATE TABLE Repartidor(
 	calle VARCHAR(30) CHECK(calle <> ''),
 	estado VARCHAR(30) CHECK(estado <> ''),
 	municipio VARCHAR(30) CHECK(municipio <> ''),
-	codigo_postal INT CHECK(codigo_postal between 10000 and 99999),
+	codigo_postal INT CHECK(codigo_postal between 00000 and 99999),
 	numero VARCHAR(13) CHECK(numero <> ''),
 	nombre VARCHAR(30) CHECK(nombre <> ''),
 	apellido_paterno VARCHAR (30) CHECK (apellido_paterno <> ''),
 	apellido_materno VARCHAR(30) CHECK (apellido_materno <> ''),
 	salario VARCHAR (10) CHECK (salario <> ''),
-	horario VARCHAR (11) CHECK(CHAR_LENGTH(horario) = 11),
+	horario VARCHAR (11) CHECK(CHAR_LENGTH(horario) <= 11),
 	calificacion INT CHECK(calificacion between 0 and 10)
 );
 
