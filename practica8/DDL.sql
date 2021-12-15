@@ -20,9 +20,9 @@ COMMENT ON COLUMN tarjeta.vencimiento IS 'La fecha de vencimiento de la tarjeta 
 COMMENT ON COLUMN tarjeta.tipo_tarjeta IS 'El tipo de tarjeta que tiene el cliente';
 
 CREATE TABLE categoria(
-	id_categoria VARCHAR(30) CHECK (id_categoria <> '') UNIQUE,
+	id_categoria VARCHAR(100) CHECK (id_categoria <> '') UNIQUE,
 	descripcion VARCHAR(100) CHECK (descripcion <> ''),
-	nombre VARCHAR(30) CHECK(nombre <> ''),
+	nombre VARCHAR(100) CHECK(nombre <> ''),
 	cantidad_de_productos INT NOT NULL
 );
 
@@ -142,11 +142,11 @@ CREATE TABLE cliente(
 	estado VARCHAR(30) CHECK(estado <> ''),
 	municipio VARCHAR(30) CHECK(municipio <> ''),
 	codigo_postal INT CHECK(codigo_postal between 00000 and 99999),
-	numero VARCHAR(13) CHECK(numero <> ''),
-	nombre VARCHAR(30) CHECK(nombre <> ''),
-	apellido_paterno VARCHAR (30) CHECK (apellido_paterno <> ''),
-	apellido_materno VARCHAR(30) CHECK (apellido_materno <> ''),
-	correo_electronico VARCHAR (30) CHECK (correo_electronico <> ''),
+	numero VARCHAR(20) CHECK(numero <> ''),
+	nombre VARCHAR(50) CHECK(nombre <> ''),
+	apellido_paterno VARCHAR (50) CHECK (apellido_paterno <> ''),
+	apellido_materno VARCHAR(50) CHECK (apellido_materno <> ''),
+	correo_electronico VARCHAR (50) CHECK (correo_electronico <> ''),
 	contrasena VARCHAR (50) CHECK(contrasena <> ''),
 	puntos_acumulados INT NOT NULL
 );
