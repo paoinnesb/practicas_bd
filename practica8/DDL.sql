@@ -38,8 +38,8 @@ CREATE TABLE proveedor(
 	calle VARCHAR (30) CHECK(calle <> ''),
 	estado VARCHAR (30) CHECK(estado <> ''),
 	municipio VARCHAR (30) CHECK (municipio <> ''),
-	numero VARCHAR (13) CHECK (numero <> ''),
-	codigo_postal INT CHECK(codigo_postal between 10000 and 99999)
+	numero VARCHAR (20) CHECK (numero <> ''),
+	codigo_postal INT CHECK(codigo_postal between 00000 and 99999)
 );
 
 COMMENT ON TABLE proveedor IS 'Tabla que contiene la información de los proveedores';
