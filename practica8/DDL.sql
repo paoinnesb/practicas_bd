@@ -8,7 +8,7 @@ DROP SCHEMA IF EXISTS public CASCADE;
 CREATE SCHEMA public;
 
 CREATE TABLE tarjeta(
-	numero_tarjeta INT NOT NULL UNIQUE,
+	numero_tarjeta BIGINT NOT NULL UNIQUE,
 	curp_cliente VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_cliente)=18),
 	vencimiento DATE NOT NULL,
 	tipo_tarjeta VARCHAR(20) CHECK(tipo_tarjeta <> '')
