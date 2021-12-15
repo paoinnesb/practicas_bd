@@ -203,7 +203,7 @@ COMMENT ON COLUMN Repartidor.calificacion IS 'La calificacion del repartidor';
 COMMENT ON COLUMN Repartidor.nombre IS 'El nombre del repartidor.';
 
 CREATE TABLE telefono(
-	telefono VARCHAR (13) NOT NULL CHECK (telefono <> ''),
+	telefono VARCHAR (10) NOT NULL CHECK (telefono <> ''),
 	rfc VARCHAR(12) NOT NULL CHECK(CHAR_LENGTH (rfc) = 12)
 );
 
