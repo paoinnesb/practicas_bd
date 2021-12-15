@@ -147,7 +147,7 @@ CREATE TABLE cliente(
 	apellido_paterno VARCHAR (30) CHECK (apellido_paterno <> ''),
 	apellido_materno VARCHAR(30) CHECK (apellido_materno <> ''),
 	correo_electronico VARCHAR (30) CHECK (correo_electronico <> ''),
-	contrasena VARCHAR (50) CHECK(contraseña <> ''),
+	contrasena VARCHAR (50) CHECK(contrasena <> ''),
 	puntos_acumulados INT NOT NULL
 );
 
@@ -165,7 +165,7 @@ COMMENT ON COLUMN cliente.apellido_materno IS 'El apellido materno del cliente';
 COMMENT ON COLUMN cliente.correo_electronico IS 'El correo electronico del cliente.';
 COMMENT ON COLUMN cliente.puntos_acumulados IS 'El numero de puntos acumulados del cliente';
 COMMENT ON COLUMN cliente.nombre IS 'El nombre del cliente.';
-COMMENT ON COLUMN cliente.contraseña IS 'La contraseña del cliente.';
+COMMENT ON COLUMN cliente.contrasena IS 'La contraseña del cliente.';
 
 CREATE TABLE Repartidor(
 	curp_repartidor VARCHAR(18) NOT NULL CHECK(CHAR_LENGTH(curp_repartidor) = 18) UNIQUE,
