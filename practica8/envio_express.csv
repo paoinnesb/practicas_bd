@@ -1,0 +1,101 @@
+id_envio_express,curp_repartidor,precio,estado,tiempo_de_envio,tiempo,costo
+1,error: undefined method `id' for nil:NilClass,97585797.28,Sundown,2021/03/24,3,34945.63
+2,error: undefined method `id' for nil:NilClass,3300488.49,Warrior,2021/06/20,3,88854.3
+3,error: undefined method `id' for nil:NilClass,14163806.91,Monica,2021/07/06,2,38640.66
+4,error: undefined method `id' for nil:NilClass,63767540.77,Kipling,2021/11/11,3,47044.09
+5,error: undefined method `id' for nil:NilClass,2766684.67,Maple Wood,2021/09/05,1,64657.41
+6,error: undefined method `id' for nil:NilClass,3730867.81,Duke,2021/11/22,1,55224.26
+7,error: undefined method `id' for nil:NilClass,15979370.86,Ruskin,2021/06/03,2,48461.18
+8,error: undefined method `id' for nil:NilClass,66993369.49,Messerschmidt,2021/10/19,2,44808.82
+9,error: undefined method `id' for nil:NilClass,26678682.92,Roth,2021/03/15,1,13117.25
+10,error: undefined method `id' for nil:NilClass,65488379.0,Meadow Valley,2021/09/07,3,59541.6
+11,error: undefined method `id' for nil:NilClass,9682607.0,Eliot,2021/05/11,1,82721.97
+12,error: undefined method `id' for nil:NilClass,59690368.65,Arrowood,2021/01/17,1,51045.28
+13,error: undefined method `id' for nil:NilClass,45574078.63,Mallard,2021/09/20,3,82426.59
+14,error: undefined method `id' for nil:NilClass,60423119.1,Eggendart,2021/08/02,2,9633.37
+15,error: undefined method `id' for nil:NilClass,87474817.7,Warbler,2021/07/23,3,8796.37
+16,error: undefined method `id' for nil:NilClass,29434514.86,Longview,2021/05/11,3,50689.57
+17,error: undefined method `id' for nil:NilClass,51063036.69,Crescent Oaks,2021/02/06,3,78526.03
+18,error: undefined method `id' for nil:NilClass,30778484.97,Twin Pines,2021/06/10,1,36245.85
+19,error: undefined method `id' for nil:NilClass,52989243.05,Rowland,2021/01/14,3,11181.9
+20,error: undefined method `id' for nil:NilClass,36364925.49,Kim,2021/04/20,3,20823.15
+21,error: undefined method `id' for nil:NilClass,78160766.24,Rockefeller,2021/09/26,1,38921.34
+22,error: undefined method `id' for nil:NilClass,82821314.94,Westerfield,2021/11/08,2,36474.11
+23,error: undefined method `id' for nil:NilClass,22170403.37,Myrtle,2021/06/20,1,85950.09
+24,error: undefined method `id' for nil:NilClass,28550394.42,Novick,2021/09/04,1,3214.31
+25,error: undefined method `id' for nil:NilClass,93193915.14,Duke,2021/03/27,3,49208.99
+26,error: undefined method `id' for nil:NilClass,56090766.17,Nobel,2021/07/16,1,34640.24
+27,error: undefined method `id' for nil:NilClass,25421867.71,Valley Edge,2021/07/31,2,82335.64
+28,error: undefined method `id' for nil:NilClass,65751693.2,Utah,2021/10/16,3,8977.18
+29,error: undefined method `id' for nil:NilClass,48581570.64,Crescent Oaks,2021/03/13,3,16391.18
+30,error: undefined method `id' for nil:NilClass,27937712.46,Menomonie,2021/03/27,2,14661.5
+31,error: undefined method `id' for nil:NilClass,81082918.36,Fieldstone,2021/11/13,3,46592.26
+32,error: undefined method `id' for nil:NilClass,56365278.2,Eagan,2021/07/26,3,75422.45
+33,error: undefined method `id' for nil:NilClass,57193126.76,Bonner,2021/01/07,1,2313.34
+34,error: undefined method `id' for nil:NilClass,20782794.29,Dayton,2021/08/28,3,14323.92
+35,error: undefined method `id' for nil:NilClass,92245487.75,Petterle,2021/03/08,3,77779.68
+36,error: undefined method `id' for nil:NilClass,13833325.85,Fremont,2021/07/13,1,88889.91
+37,error: undefined method `id' for nil:NilClass,38701148.01,Rusk,2021/04/04,2,27285.35
+38,error: undefined method `id' for nil:NilClass,79527923.58,Service,2021/11/21,3,66245.69
+39,error: undefined method `id' for nil:NilClass,46310673.0,Lunder,2021/02/05,2,20422.91
+40,error: undefined method `id' for nil:NilClass,61067204.11,Jackson,2021/09/28,2,68737.26
+41,error: undefined method `id' for nil:NilClass,52228399.11,Vernon,2021/11/18,2,38279.54
+42,error: undefined method `id' for nil:NilClass,89351261.57,Fairfield,2020/12/16,1,5070.87
+43,error: undefined method `id' for nil:NilClass,40330570.83,Ilene,2021/06/29,3,42547.85
+44,error: undefined method `id' for nil:NilClass,45105312.0,Schmedeman,2021/11/19,3,22719.89
+45,error: undefined method `id' for nil:NilClass,30731003.84,Cascade,2021/07/19,3,44156.29
+46,error: undefined method `id' for nil:NilClass,79357821.13,Hazelcrest,2021/06/06,2,34467.97
+47,error: undefined method `id' for nil:NilClass,74657492.43,Loeprich,2021/04/01,3,61866.7
+48,error: undefined method `id' for nil:NilClass,59007580.76,Caliangt,2021/07/19,3,25246.79
+49,error: undefined method `id' for nil:NilClass,33096455.27,Hovde,2021/06/27,3,18767.54
+50,error: undefined method `id' for nil:NilClass,31922793.89,Twin Pines,2020/12/25,1,45043.53
+51,error: undefined method `id' for nil:NilClass,65088709.04,Bonner,2021/07/18,1,76741.39
+52,error: undefined method `id' for nil:NilClass,24874223.41,Sherman,2021/05/31,3,67323.89
+53,error: undefined method `id' for nil:NilClass,52910478.49,Hintze,2021/11/25,3,91392.43
+54,error: undefined method `id' for nil:NilClass,79200368.29,Algoma,2021/10/13,3,23388.96
+55,error: undefined method `id' for nil:NilClass,94108983.95,Center,2021/06/24,2,79057.59
+56,error: undefined method `id' for nil:NilClass,4962899.0,Talmadge,2021/11/08,1,20755.13
+57,error: undefined method `id' for nil:NilClass,96630284.89,8th,2021/07/12,2,26254.37
+58,error: undefined method `id' for nil:NilClass,4118484.8,Morning,2021/07/29,1,93858.28
+59,error: undefined method `id' for nil:NilClass,74845876.72,Harper,2021/11/08,1,18038.39
+60,error: undefined method `id' for nil:NilClass,46679552.27,Drewry,2021/04/20,1,82364.26
+61,error: undefined method `id' for nil:NilClass,99943727.43,Manufacturers,2021/12/11,3,33402.25
+62,error: undefined method `id' for nil:NilClass,44685568.04,Moland,2021/07/18,3,26961.82
+63,error: undefined method `id' for nil:NilClass,60993904.47,Esch,2021/04/12,1,86196.57
+64,error: undefined method `id' for nil:NilClass,70142649.55,Almo,2021/08/02,3,86180.55
+65,error: undefined method `id' for nil:NilClass,5008349.65,Grasskamp,2021/10/10,2,52900.77
+66,error: undefined method `id' for nil:NilClass,79810199.19,Oakridge,2021/09/21,3,59757.35
+67,error: undefined method `id' for nil:NilClass,23643516.3,Barnett,2020/12/18,3,13134.86
+68,error: undefined method `id' for nil:NilClass,67152594.03,Trailsway,2021/06/09,1,75740.9
+69,error: undefined method `id' for nil:NilClass,20419481.46,Meadow Valley,2021/02/21,2,75827.43
+70,error: undefined method `id' for nil:NilClass,50368643.11,Gina,2021/02/23,3,64622.36
+71,error: undefined method `id' for nil:NilClass,36121956.54,Fisk,2021/05/14,3,5119.47
+72,error: undefined method `id' for nil:NilClass,10801161.52,Grayhawk,2021/07/10,3,78872.8
+73,error: undefined method `id' for nil:NilClass,97194675.51,Warbler,2021/09/30,2,40548.53
+74,error: undefined method `id' for nil:NilClass,87647550.82,Kinsman,2021/08/26,2,67143.32
+75,error: undefined method `id' for nil:NilClass,95675406.06,East,2021/05/21,1,76891.88
+76,error: undefined method `id' for nil:NilClass,81155491.23,Graedel,2021/10/01,3,68698.6
+77,error: undefined method `id' for nil:NilClass,9422022.0,Mosinee,2021/06/20,1,35518.02
+78,error: undefined method `id' for nil:NilClass,12181717.38,Bluejay,2021/04/13,3,71473.23
+79,error: undefined method `id' for nil:NilClass,58574253.01,Ilene,2021/07/03,3,76929.43
+80,error: undefined method `id' for nil:NilClass,26198930.28,Cordelia,2020/12/26,3,39449.61
+81,error: undefined method `id' for nil:NilClass,73404734.16,Coleman,2021/09/23,3,85249.16
+82,error: undefined method `id' for nil:NilClass,76798790.05,2nd,2021/06/09,1,41458.27
+83,error: undefined method `id' for nil:NilClass,86982204.7,Lotheville,2021/08/04,3,29921.14
+84,error: undefined method `id' for nil:NilClass,5738544.0,New Castle,2020/12/26,2,95069.06
+85,error: undefined method `id' for nil:NilClass,21312962.12,Crowley,2021/08/20,1,33082.1
+86,error: undefined method `id' for nil:NilClass,14135785.86,Superior,2021/01/05,3,2946.22
+87,error: undefined method `id' for nil:NilClass,20337661.03,Almo,2021/01/27,3,98605.67
+88,error: undefined method `id' for nil:NilClass,44226190.39,Granby,2021/06/05,1,11256.61
+89,error: undefined method `id' for nil:NilClass,59072763.37,Northwestern,2021/08/15,1,24322.17
+90,error: undefined method `id' for nil:NilClass,99695400.99,Mifflin,2020/12/23,2,52407.15
+91,error: undefined method `id' for nil:NilClass,68377480.98,Fisk,2021/05/23,1,31112.34
+92,error: undefined method `id' for nil:NilClass,88960874.47,Florence,2020/12/27,1,4448.21
+93,error: undefined method `id' for nil:NilClass,45125607.62,Declaration,2021/11/06,2,3330.95
+94,error: undefined method `id' for nil:NilClass,26384331.33,Stang,2021/03/22,2,63473.29
+95,error: undefined method `id' for nil:NilClass,58407278.69,Hovde,2021/11/13,2,95344.94
+96,error: undefined method `id' for nil:NilClass,37983528.08,Pennsylvania,2021/12/06,3,97855.57
+97,error: undefined method `id' for nil:NilClass,78071073.96,Anthes,2021/12/02,3,91111.65
+98,error: undefined method `id' for nil:NilClass,62960940.83,Mcguire,2021/07/15,3,69537.89
+99,error: undefined method `id' for nil:NilClass,66302084.69,Spenser,2021/10/31,3,67101.19
+100,error: undefined method `id' for nil:NilClass,51913282.25,Mandrake,2021/09/24,3,36763.44
