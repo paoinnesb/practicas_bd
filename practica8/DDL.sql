@@ -20,9 +20,9 @@ COMMENT ON COLUMN tarjeta.vencimiento IS 'La fecha de vencimiento de la tarjeta 
 COMMENT ON COLUMN tarjeta.tipo_tarjeta IS 'El tipo de tarjeta que tiene el cliente';
 
 CREATE TABLE categoria(
-	id_categoria VARCHAR(30) CHECK (id_categoria <> '') UNIQUE,
+	id_categoria VARCHAR(100) CHECK (id_categoria <> '') UNIQUE,
 	descripcion VARCHAR(100) CHECK (descripcion <> ''),
-	nombre VARCHAR(30) CHECK(nombre <> ''),
+	nombre VARCHAR(100) CHECK(nombre <> ''),
 	cantidad_de_productos INT NOT NULL
 );
 
