@@ -147,7 +147,7 @@ CREATE TABLE cliente(
 	apellido_paterno VARCHAR (30) CHECK (apellido_paterno <> ''),
 	apellido_materno VARCHAR(30) CHECK (apellido_materno <> ''),
 	correo_electronico VARCHAR (30) CHECK (correo_electronico <> ''),
-	contraseña VARCHAR (50) CHECK(contraseña <> ''),
+	contrasena VARCHAR (50) CHECK(contraseña <> ''),
 	puntos_acumulados INT NOT NULL
 );
 
